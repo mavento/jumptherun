@@ -1,0 +1,147 @@
+<nav id="navbar">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span><h3>Jump The Run</h3></span>
+      </mat-toolbar-row>
+      <mat-toolbar-row>
+        <button mat-button (click)="scrollTo('overview')">OVERVIEW</button>
+        <button mat-button (click)="scrollTo('features')">FEATURES</button>
+        <button mat-button (click)="scrollTo('details')">DETAILS</button>
+        <button mat-button (click)="scrollTo('contact')">CONTACT</button>
+        <span class="fill-space"></span>
+        <button mat-mini-fab id="enter">
+          <mat-icon>input</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+</nav>
+<header id="showcase" #showcase>
+  <div class="showcase-content">
+    <h1 class="l-heading"><span class="text-primary">Let's</span> Just Jump Into It</h1>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deleniti eligendi error, id
+      in incidunt ipsum iusto, maxime modi nihil obcaecati perspiciatis soluta unde velit.</p>
+    <a href="#" class="btn">Read More</a>
+  </div>
+</header>
+<section id="features" #features class="py-1">
+  <div class="container">
+    <mat-card>
+      <mat-toolbar class="bg-white">
+        <mat-toolbar-row>
+          <span>Features</span>
+          <span class="fill-space"></span>
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <span>Lorem</span>
+            </button>
+            <button mat-menu-item disabled>
+              <span>Ipsum</span>
+            </button>
+            <button mat-menu-item>
+              <span>Dolor</span>
+            </button>
+          </mat-menu>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <mat-card-content>
+        <div class="items">
+          <div class="item">
+            <mat-icon>account_balance</mat-icon>
+            <div>
+              <h3>Professional Legal Solutions</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, minus.</p>
+            </div>
+          </div>
+          <div class="item">
+            <mat-icon>equalizer</mat-icon>
+            <div>
+              <h3>Higher Categories</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, minus.</p>
+            </div>
+          </div>
+          <div class="item">
+            <mat-icon>create</mat-icon>
+            <div>
+              <h3>Business & Society</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, minus.</p>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>
+<section id="details" #details class="py-1">
+  <div class="container">
+    <mat-card>
+      <mat-toolbar class="bg-white">
+        <mat-toolbar-row>
+          <span>Details</span>
+          <span class="fill-space"></span>
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <span>Lorem</span>
+            </button>
+            <button mat-menu-item disabled>
+              <span>Ipsum</span>
+            </button>
+            <button mat-menu-item>
+              <span>Dolor</span>
+            </button>
+          </mat-menu>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <mat-card-content>
+        <div class="details-img"></div>
+        <div class="details-text bg-dark p-2">
+          <h2 class="m-heading"><span class="text-primary">What</span> We Do</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque laudantium molestiae nesciunt quae ratione
+            sint
+            tempore! Consectetur corporis eaque, eius enim et ex explicabo magnam maiores nihil quaerat quo soluta!</p>
+          <h3>Our Team</h3>
+          <ul class="list">
+            <li>Brandon Castro</li>
+            <li>Bailey Rowe</li>
+            <li>Elaine Conner</li>
+            <li>Irene Vargas</li>
+            <li>Troy Moore</li>
+          </ul>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>
+<section id="contact" #contact>
+  <div class="contact-form p-3 bg-dark">
+    <form>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Name">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="E-Mail">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Phone">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <textarea matInput placeholder="Message"></textarea>
+      </mat-form-field>
+      <div class="button-row py-1">
+        <button mat-raised-button color="warn" class="full-width">Send</button>
+      </div>
+    </form>
+  </div>
+  <div class="map" #map>
+  </div>
+</section>
+<footer id="main-footer" class="bg-white">
+  <div class="container">
+    <p>Copyright &copy; 2019, All Rights Reserved </p>
+  </div>
+</footer>

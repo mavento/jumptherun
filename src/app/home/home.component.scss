@@ -1,0 +1,138 @@
+@import "../../styles";
+
+#navbar {
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .mat-toolbar {
+
+
+    .mat-toolbar-row:first-of-type {
+      margin: 40px 0px;
+
+      h3 {
+        font-size: 34px;
+        line-height: 40px;
+        font-weight: 400;
+      }
+    }
+
+    .mat-toolbar-row:last-of-type {
+      background: $header-color;
+
+      #enter {
+        -webkit-transform: translate(-80%, -80%);
+        transform: translate(-80%, -80%);
+        overflow: hidden;
+        background: $warn-color;
+      }
+    }
+  }
+
+  .fill-space {
+    flex: 1 1 auto;
+  }
+}
+
+#showcase {
+
+  background: #333 url(../../assets/showcase.jpg) no-repeat center center/cover;
+  height: 600px;
+  color: #fff;
+
+  .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 1.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+#features {
+
+  mat-card {
+    .items {
+      display: flex;
+      padding: 1rem;
+
+      .item {
+        flex: 1;
+        text-align: center;
+        padding: 1rem;
+
+        mat-icon {
+          box-sizing: content-box;
+          background: $accent-color;
+          border-radius: 50%;
+          padding: 2rem;
+          margin: 10px;
+        }
+
+      }
+    }
+  }
+}
+
+#details {
+  .container {
+    mat-card-content {
+      display: flex;
+
+      div {
+        flex: 1;
+      }
+
+      .details-img {
+        background: url("../../assets/details.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto;
+      }
+    }
+  }
+}
+
+
+#contact {
+  display: flex;
+
+  .contact-form {
+    flex: 1;
+
+    /* input color class */
+    ::ng-deep input.mat-input-element {
+      color: #fff;
+    }
+
+    /* Change label color on focused */
+    ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+      color: #fff !important;
+    }
+
+    /* underline border color on focused */
+    ::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple {
+      background-color: #fff !important;
+    }
+
+    ::ng-deep .mat-form-field-empty.mat-form-field-label {
+      color: white;
+    }
+
+
+  }
+
+  .map {
+    flex: 1;
+  }
+}
+
+#main-footer {
+  padding: 20px;
+  text-align: center;
+}
